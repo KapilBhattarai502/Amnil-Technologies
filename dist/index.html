@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="../src/output.css" rel="stylesheet" /> -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>TodoList</title>
+  </head>
+  <body>
+    <div class="h-lvh flex justify-center items-center">
+      <div
+        class="bg-white rounded-md shadow-md max-w-lg flex-grow"
+      >
+        <div class="flex items-center gap-2 px-4 py-2">
+          <h1 class="text-lg font-bold">To-Do List</h1>
+          <i class="fa-solid fa-book"></i>
+        </div>
+
+        <div class="p-3">
+          <form id="form">
+            <div class="bg-slate-300 rounded-full flex justify-between">
+              <input
+                type="text"
+                class="p-3 w-full text-black bg-transparent"
+                placeholder="Add your task"
+                name="task"
+                required
+              />
+              <button
+                type="submit"
+                class="bg-orange-400 rounded-full text-white px-7"
+              >
+                Add
+              </button>
+            </div>
+          </form>
+        </div>
+        
+        <ul id="tasklist" class="pl-3 flex flex-col-reverse"></ul>
+      </div>
+     
+    </div>
+
+
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
